@@ -1100,6 +1100,158 @@ a {
     letter-spacing: .2em;
 }
 
+.digi {
+    display: grid;
+    grid-template-columns: .38fr 1fr;
+    gap: 8%;
+    align-items: start;
+}
+
+.digi-figure {
+    position: sticky;
+    top: 40px;
+}
+
+.digi-figure img {
+    max-width: 340px;
+    height: auto;
+}
+
+.digi-figure figcaption {
+    max-width: 340px;
+    margin-top: 14px;
+    color: var(--muted);
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+.digi-text {
+    max-width: 760px;
+}
+
+.digi-text > p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.95;
+    margin-bottom: 28px;
+}
+
+.task-list {
+    list-style: none;
+    margin-top: 45px;
+    border-top: 1px solid var(--line);
+}
+
+.task-list li {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 10px;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.task-list li span {
+    color: var(--accent);
+    font-size: 9px;
+    letter-spacing: .18em;
+    padding-top: 6px;
+}
+
+.task-list li p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.info {
+    padding-top: 40px;
+}
+.info-section{
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 5%;
+}
+.info-row {
+    display: grid;
+    grid-template-columns: .25fr 1fr;
+    padding: 55px 0;
+    border-top: 1px solid var(--line);
+}
+
+.info-row:last-child {
+    border-bottom: 1px solid var(--line);
+}
+
+.info-body h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(34px, 4vw, 56px);
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -.04em;
+    margin-bottom: 18px;
+}
+
+.info-body h2 em {
+    color: var(--brown);
+    font-style: italic;
+}
+
+.info-body > p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.info-body > p.info-strong {
+    margin-top: 22px;
+    color: var(--dark);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.fee-list {
+    display: flex;
+    gap: 90px;
+}
+
+.fee-list > div,
+.contact-grid > div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.fee-list span,
+.contact-grid span {
+    color: var(--muted);
+    font-size: 9px;
+    letter-spacing: .2em;
+    margin-bottom: 4px;
+}
+
+.fee-list strong {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(40px, 5vw, 64px);
+    font-weight: 500;
+    letter-spacing: -.04em;
+    line-height: 1;
+    color: var(--brown);
+}
+
+.contact-grid {
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.contact-grid a {
+    font-size: 18px;
+    transition: .3s ease;
+}
+
+.contact-grid a:hover {
+    color: var(--brown);
+}
+
 @media (max-width: 900px) {
     .collection-hero {
         grid-template-columns: 1fr;
@@ -1177,3 +1329,6 @@ a {
 }
 
 
+.collection-grid .collection-card:nth-child(4) img {
+    object-position: 50% 8%;
+}
